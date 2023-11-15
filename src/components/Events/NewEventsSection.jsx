@@ -14,7 +14,7 @@ export default function NewEventsSection() {
     queryKey: ["events"],
     queryFn: fetchEvents,
     staleTime: 0,
-    gcTime: 30000,
+    //gcTime: 30000,
   });
 
   let content;
@@ -47,7 +47,7 @@ export default function NewEventsSection() {
   return (
     <section className="content-section" id="new-events-section">
       <header>
-        <h2>Recently added events</h2>
+        <h2>Recently added events!</h2>
       </header>
       {content}
     </section>
